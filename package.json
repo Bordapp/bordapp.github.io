@@ -1,0 +1,24 @@
+{
+  "name": "bordapp.github.io",
+  "version": "1.0.0",
+  "description": "Group Payments Made Easy",
+  "main": "firebasesany.js",
+  "dependencies": {
+    "sparkpost": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bordapp/bordapp.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bordapp/bordapp.github.io/issues"
+  },
+  "homepage": "https://github.com/Bordapp/bordapp.github.io#readme"
+}
