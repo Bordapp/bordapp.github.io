@@ -11,7 +11,7 @@
   firebase.initializeApp(config);
 
   var defaultApp = firebase.initializeApp(defaultAppConfig);
-  if(defaultApp.length == 0){
+  if(defaultApp.name.length == 0){
     console.log(":(")
   }else{
     console.log(defaultApp.name);
