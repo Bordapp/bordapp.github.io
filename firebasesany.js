@@ -11,11 +11,11 @@
   firebase.initializeApp(config);
 
   var defaultApp = firebase.initializeApp(defaultAppConfig);
-  if(defaultApp.name.length == 0){
+  if(defaultApp.name.length == 0)
     console.log(":(")
-  }else{
+  else
     console.log(defaultApp.name);
-  };
+  
   /* Random Firebase stuff
   const preObject = document.getElementById('object');
   const dbRefObject = firebase.database().ref().child("object");
