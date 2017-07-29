@@ -4,6 +4,7 @@
   "description": "Group Payments Made Easy",
   "main": "firebasesany.js",
   "dependencies": {
+    "firebase": "^4.2.0",
     "sparkpost": "^2.1.2"
   },
   "devDependencies": {},
