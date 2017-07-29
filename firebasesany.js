@@ -10,6 +10,9 @@
   };
   firebase.initializeApp(config);
 
+  var defaultApp = firebase.initializeApp(defaultAppConfig);
+  var defaultApp = firebase.initializeApp(defaultAppConfig);
+
   /* Random Firebase stuff
   const preObject = document.getElementById('object');
   const dbRefObject = firebase.database().ref().child("object");
