@@ -15,7 +15,7 @@
     console.log(":(")
   }else{
     console.log(defaultApp.name);
-  }
+  };
   /* Random Firebase stuff
   const preObject = document.getElementById('object');
   const dbRefObject = firebase.database().ref().child("object");
