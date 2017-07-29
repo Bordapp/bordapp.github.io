@@ -11,7 +11,7 @@
   firebase.initializeApp(config);
 
   var defaultApp = firebase.initializeApp(defaultAppConfig);
-  console.log(defaultApp.name);
+  console.log('defaultApp.name');
 
   /* Random Firebase stuff
   const preObject = document.getElementById('object');
