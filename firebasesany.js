@@ -11,10 +11,12 @@
   firebase.initializeApp(config);
 
   var defaultApp = firebase.initializeApp(defaultAppConfig);
-  if(defaultApp.name.length == 0)
-    console.log(":(")
-  else
-    console.log(defaultApp.name)
+  if(defaultApp.name.length == 0){
+    console.log("Rip")
+  }
+  else{
+    console.log(defaultApp.name);
+  }
 
   /* Random Firebase stuff
   const preObject = document.getElementById('object');
