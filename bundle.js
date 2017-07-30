@@ -19305,7 +19305,7 @@ module.exports = exports['default'];
   var setTimeoutFunc = setTimeout;
 
   function noop() {}
-  
+
   // Polyfill for Function.prototype.bind
   function bind(fn, thisArg) {
     return function () {
@@ -19523,7 +19523,7 @@ module.exports = exports['default'];
   Promise._setUnhandledRejectionFn = function _setUnhandledRejectionFn(fn) {
     Promise._unhandledRejectionFn = fn;
   };
-  
+
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = Promise;
   } else if (!root.Promise) {
