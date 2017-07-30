@@ -14,7 +14,6 @@ var server = http.createServer(function (request, response) {
     databaseURL: "https://bord-66644.firebaseio.com",
     storageBucket: "bord-66644.appspot.com"
   };
-  firebase.initializeApp(config);
 
   var defaultApp = firebase.initializeApp(config);
   if(defaultApp.name.length == 0){
