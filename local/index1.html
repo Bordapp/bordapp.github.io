@@ -1,0 +1,49 @@
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBhRCdILWj7jmLp3q_YT3h3WgoHa3xF2D0",
+    authDomain: "test-project-83821.firebaseapp.com",
+    databaseURL: "https://test-project-83821.firebaseio.com",
+    projectId: "test-project-83821",
+    storageBucket: "test-project-83821.appspot.com",
+    messagingSenderId: "250058904557"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+  // Helper functions
+  function signup() {
+    // var email = document.getElementById('email').innerHTML;
+    // var password = document.getElementById('password').innerHTML;
+    var email = "lathalaxsan@gmail.com"
+    var password = ""
+
+
+    // firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    // // Handle Errors here.
+    //   var errorCode = error.code;
+    //   var errorMessage = error.message;
+    // // ...
+    // });
+  }
+
+  function addToDataBase() {
+    //var moneyAmount = document.getElementById('money-amount').innerHTML;
+    var moneyAmount = "85"
+    function writeUserData(moneyAmount) {
+      firebase.database().ref('money/' + moneyAmount).set({
+        money: moneyAmount
+      });
+    }
+    //
+
+
+  }
+  //
+</script>
+
+<button type="button" name="button" onclick="signup()"></button>
+
+<button type="button" name="button" onclick="addToDataBase()"></button>

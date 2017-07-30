@@ -10,6 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="876121775394-gs42f103jfguqn9qpbr06i64tjfl7vgq.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -24,11 +28,27 @@
 					Your group payment soluton.</h1>
 					<p>Check out what we do.</p>
 					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Discover</a></li>
+						 <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
 					</ul>
 				</div>
 			</section>
+      //
+      <script>
+           function onSignIn(googleUser) {
+             // Useful data for your client-side scripts:
+             var profile = googleUser.getBasicProfile();
+             console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+             console.log('Full Name: ' + profile.getName());
+             console.log('Given Name: ' + profile.getGivenName());
+             console.log('Family Name: ' + profile.getFamilyName());
+             console.log("Image URL: " + profile.getImageUrl());
+             console.log("Email: " + profile.getEmail());
 
+             // The ID token you need to pass to your backend:
+             var id_token = googleUser.getAuthResponse().id_token;
+             console.log("ID Token: " + id_token);
+           };
+         </script>
 		<!-- One -->
 			<section id="one" class="main style1">
 				<div class="container">
