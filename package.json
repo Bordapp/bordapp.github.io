@@ -9,7 +9,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify firebasesany.js -o bundle.js"
+    
+
   },
   "repository": {
     "type": "git",
