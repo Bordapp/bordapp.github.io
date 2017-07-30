@@ -1,7 +1,7 @@
+var firebase = require("firebase");
 
 // Set the configuration for your app
-(function() {
-  var firebase = require("firebase");
+// (function() {
   const config = {
     apiKey: "AIzaSyA8FE1ouJQmpnNe0Do4XT-cmFuxJFVBRcw",
     authDomain: "bord-66644.firebaseapp.com",
@@ -11,21 +11,16 @@
   firebase.initializeApp(config);
 
   var defaultApp = firebase.initializeApp(defaultAppConfig);
-  if(defaultApp.name.length == 0){
-    console.log("Rip")
-  }
-  else{
-    console.log(defaultApp.name);
-  }
+  if(defaultApp.name.length == 0)
+    console.log(":(")
+  else
+    console.log(defaultApp.name)
 
   /* Random Firebase stuff
   const preObject = document.getElementById('object');
   const dbRefObject = firebase.database().ref().child("object");
-
   dbRefObject.on('value', snap=> console.log(snap.val()));
   console.log(preObject);
   console.log(dbRefObject);
-
-
 */
-}());
+// }());
