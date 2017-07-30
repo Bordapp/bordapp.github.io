@@ -94,8 +94,37 @@
 														</tr>
                             <script>
                             function submit(){
+															var i = 1;
+															var total = 0;
+															var temp = 0;
+															var sanyt = 0;
+															var neelt = 0;
+															var jayt = 0;
+															while(i <= 10){
+																var temp = parseInt(document.getElementById('p' + parseInt(i)).value);
+																if(document.getElementById('n'+parseInt(i)).value === "Santosh"){
+																	if(isNaN(temp)){
+																		temp = 0;
+																	}
+																	sanyt = sanyt + temp;
+																}else if(document.getElementById('n'+parseInt(i)).value === "Neel") {
+																	if(isNaN(temp)){
+																		temp = 0;
+																	}
+																	neelt = neelt + temp;
+																}else if (document.getElementById('n'+parseInt(i)).value === "Jay") {
+																	if(isNaN(temp)){
+																		temp = 0;
+																	}
+																	jayt = jayt + temp;
+																}else if (document.getElementById('n'+parseInt(i)).value === "") {
 
-                              total = ()
+																}
+																i = i+1;
+															}
+															alert("Santosh total:" + sanyt);
+															alert("Jay:" + jayt);
+															alert("Neel" + neelt);
                             }
                             </script>
 													</table>
